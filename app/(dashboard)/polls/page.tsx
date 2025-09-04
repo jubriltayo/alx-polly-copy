@@ -27,7 +27,10 @@ export default async function PollsPage() {
           </div>
         )}
       </div>
-      {error && <div className="text-red-500">{error}</div>}
+      {/* 
+        For production, do not display error messages to the client here.
+        Optionally, log errors server-side for debugging.
+      */}
     </div>
   );
 }
